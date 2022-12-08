@@ -1,0 +1,12 @@
+---
+title: "{{ARTICLE_TITLE}}"
+date: "{{ARTICLE_DATE}}"
+tags: "{{ARTICLE_TAGS}}" # list of tags. example: ["tag1", "tag2"]
+categories: ["<<CATEGORY>>"]
+draft: false
+description: "<<DESCRIPTION>>"
+cover:
+    image: "image/<<IMAGE_PATH>>" # image path/url
+    alt: "<<ALT_TEXT>>" # alt text
+    caption: "<text>" # display caption under cover
+---
