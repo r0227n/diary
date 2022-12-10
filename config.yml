@@ -1,4 +1,4 @@
-baseURL: ""  # TODO: 公開URLが決まり次第、追記する
+baseURL: "https://r0227n.github.io/diary/"
 title: Ryo24 Diary
 paginate: 5
 theme: PaperMod
