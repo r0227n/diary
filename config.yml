@@ -1,5 +1,5 @@
 baseURL: ""  # TODO: 公開URLが決まり次第、追記する
-title: ExampleSite
+title: Ryo24 Diary
 paginate: 5
 theme: PaperMod
 
@@ -8,19 +8,17 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: UA-123-45
-
 minify:
   disableXML: true
   minifyOutput: true
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
+  title: Ryo24 Diary
+  description: "Ryo24 Diary site"
   keywords: [Blog, Portfolio, PaperMod]
   author: Ryo24
-  images: ["<link or path of image for opengraph, twitter-cards>"]
+  images: ["https://twitter.com/r0227n_/photo"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
@@ -44,15 +42,14 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "/favicons/favicon.ico"
+    favicon16x16: "/favicons/icon-16x16.png"
+    favicon32x32: "/favicons/icon-32x32.png"
+    apple_touch_icon: "/favicons/apple-touch-icon.png"
 
   label:
     text: "Ryo24 Diary"
-    icon: /apple-touch-icon.png
+    icon: /icons/icon-256x256.png
     iconHeight: 35
 
   # profile-mode
@@ -77,18 +74,14 @@ params:
 
   socialIcons:
     - name: twitter
-      url: "https://twitter.com/"
+      url: "https://twitter.com/r0227n_"
     - name: github
-      url: "https://github.com/"
-
-  analytics:
-    google:
-      SiteVerificationTag: "{{GOOGLE_ANALYTICS_ID}}" # TODO: パイプライン実行時にGAのIDを置換できるようにする
+      url: "https://github.com/r0227n"
 
   # Home-Info Mode
   homeInfoParams:
-    Title: Hi there wave
-    Content: Can be Info, links, about...
+    Title: Hi Everyone
+    Content: Ryo24 is a junior developer.
 
   cover:
     linkFullImages: true # to append file to hyperlink of full images
@@ -109,11 +102,11 @@ params:
 menu:
   main:
     - identifier: categories
-      name: categories
+      name: Categories
       url: /categories/
       weight: 10
     - identifier: tags
-      name: tags
+      name: Tags
       url: /tags/
       weight: 20
     - identifier: Archive
